@@ -25,7 +25,7 @@ A powerful web automation tool that combines Playwright with AI agents to perfor
 The project consists of three main components:
 
 1. **Playwright Manager** (`playwright_helper/`)
-   - Handles browser automation
+   - Handles browser automation actions
    - Manages DOM parsing and element interaction
    - Provides clean DOM representations
 
@@ -44,13 +44,19 @@ The project consists of three main components:
 - Python 3.12+
 - Node.js (for Playwright)
 - OpenAI API key
-- [Homebrew](https://brew.sh/) (for uv installation)
 
 ## ⚙️ Installation
 
-1. Install uv using Homebrew:
+1. Install uv (if not already installed):
    ```bash
+   # On macOS with Homebrew
    brew install uv
+
+   # On macOS and Linux
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   
+   # On Windows
+   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
 2. Clone the repository:
@@ -68,18 +74,13 @@ The project consists of three main components:
    source .venv/bin/activate
    ```
 
-4. Install Playwright browsers:
-   ```bash
-   playwright install
-   ```
-
-5. Set up environment variables:
+4. Set up environment variables:
    Create a `.env` file in the root directory:
    ```bash
    OPENAI_API_KEY="your_openai_api_key"
    ```
 
-6. Configure Streamlit secrets:
+5. Configure Streamlit secrets:
    Create `.streamlit/secrets.toml`:
    ```toml
    [credentials]
@@ -98,39 +99,11 @@ The project consists of three main components:
 
 3. Enter your task in the input field and submit
 
-## 📝 Example Tasks
-
-- Web scraping
-- Form filling
-- Data extraction
-- Automated testing
-- Multi-step workflows
-
 ## 🔒 Security
 
 - Credentials are stored securely in Streamlit secrets
 - API keys are managed through environment variables
 - No sensitive data is logged or stored in plain text
-
-## 🐛 Troubleshooting
-
-Common issues and solutions:
-
-1. **Browser Launch Issues**
-   - Ensure Playwright browsers are installed
-   - Check system requirements for browser compatibility
-
-2. **API Key Errors**
-   - Verify OpenAI API key in `.env` file
-   - Check API key permissions and quota
-
-3. **Credential Issues**
-   - Verify credentials in `.streamlit/secrets.toml`
-   - Check file permissions
-
-4. **uv Installation Issues**
-   - Ensure uv is properly installed via Homebrew
-   - Check Python version compatibility (requires Python 3.12+)
 
 ## 🤝 Contributing
 
@@ -143,7 +116,3 @@ Common issues and solutions:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Support
-
-For support, please open an issue in the GitHub repository or contact the maintainers.
