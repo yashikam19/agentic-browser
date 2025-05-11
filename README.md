@@ -6,21 +6,25 @@
 ![uv](https://img.shields.io/badge/uv-package%20manager-purple)
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
-# Agentic Browser
+# BrowserPilot
 
-A powerful web automation tool that combines Playwright with AI agents to perform complex web interactions and data extraction tasks.
+A powerful web automation framework that performs complex browser tasks through natural language commands
 
 ![abc](docs/app_screenshort.png)
 
 ## 🚀 Features
 
-- **AI-Powered Web Automation**: Uses AI agents to plan and execute web interactions
+- **AI-Powered Web Automation**: Uses AI agents to interpret, plan and execute web interactions
+- **Natural Language Control**: Describe tasks in plain English and let the framework handle the execution
 - **Smart DOM Parsing**: Efficient DOM parsing with unique element identification
 - **Secure Credential Handling**: Safe management of login credentials
 - **Multi-Agent System**: Collaborative agents for planning and execution
 - **Streamlit Interface**: User-friendly web interface for interaction
+- **Error Recovery**: Adapts to errors and unexpected page states through verification and re-planning
 
 ## 🏗️ Architecture
+
+![alt text](docs/architecture.jpg)
 
 The project consists of three main components:
 
@@ -32,7 +36,7 @@ The project consists of three main components:
 2. **Agent System** (`agents/`)
    - **Planner Agent**: Plans and breaks down tasks
    - **Browser Agent**: Executes web interactions
-   - **User Proxy Agent**: Handles user verification
+   - **User Proxy Agent**: Handles user verification and CAPTCHA solving
 
 3. **Web Interface** (`app.py`)
    - Streamlit-based user interface
@@ -97,7 +101,22 @@ The project consists of three main components:
 
 2. Access the web interface at `http://localhost:8501`
 
-3. Enter your task in the input field and submit
+3. Enter your task in natural language and submit. Example tasks:
+   ```bash
+   "Login to Github and fork the main repo of FastAPI over there"
+   "Login to amazon and track my latest order over there"
+   "Search for Mansi Mishra on linkedin and send a 'Hi from agent' message"
+   "Search for the oldest video of Mr. beast on youtube"
+   ```
+
+## Use Cases
+
+- **Shopping Automation**: Find products, compare prices, add to cart
+- **Travel Booking**: Search for flights/hotels with specific criteria
+- **Research**: Collect information from multiple websites
+- **Form Filling**: Complete registrations or applications
+- **Content Extraction**: Get structured data from websites
+- **Repetitive Tasks**: Automate any recurring browser-based workflow
 
 ## 🔒 Security
 
