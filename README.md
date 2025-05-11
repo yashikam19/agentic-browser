@@ -10,6 +10,8 @@
 
 A powerful web automation tool that combines Playwright with AI agents to perform complex web interactions and data extraction tasks.
 
+![abc](docs/app_screenshort.png)
+
 ## 🚀 Features
 
 - **AI-Powered Web Automation**: Uses AI agents to plan and execute web interactions
