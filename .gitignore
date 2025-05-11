@@ -1,0 +1,19 @@
+# Virtual Environment
+# Ignore directories commonly used for Python virtual environments.
+# These directories contain environment-specific dependencies and should not be versioned.
+venv/
+myvenv/
+env/
+.env
+.env/
+.venv/
+
+# Python
+# Ignore compiled Python files and shared object files.
+# These are generated during execution and are not needed in version control.
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+.streamlit/

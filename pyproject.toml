@@ -1,0 +1,16 @@
+[project]
+name = "crustdata-agentic-browser"
+version = "0.1.0"
+description = "A powerful web automation tool that combines Playwright with AI agents"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "autogen==0.8.5",
+    "autogen-agentchat==0.5.1",
+    "autogen-core==0.5.1",
+    "autogen-ext==0.5.1",
+    "openai==1.68.2",
+    "playwright==1.51.0",
+    "streamlit==1.44.1",
+    "python-dotenv==1.0.1",
+]
