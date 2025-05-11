@@ -53,8 +53,8 @@ The project consists of three main components:
 
 2. Clone the repository:
    ```bash
-   git clone https://github.com/yashikam19/crustdata-agentic-browser.git
-   cd crustdata-agentic-browser
+   git clone https://github.com/yashikam19/agentic-browser.git
+   cd agentic-browser
    ```
 
 3. Install dependencies and create virtual environment:

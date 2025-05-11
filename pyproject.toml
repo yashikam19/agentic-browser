@@ -1,5 +1,5 @@
 [project]
-name = "crustdata-agentic-browser"
+name = "agentic-browser"
 version = "0.1.0"
 description = "A powerful web automation tool that combines Playwright with AI agents"
 readme = "README.md"
