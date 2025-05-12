@@ -8,7 +8,7 @@
 
 # Browserf
 
-A powerful web automation framework that performs complex browser tasks through natural language commands
+A browser automation tool that performs complex browser tasks through natural language commands
 
 ![abc](docs/app_screenshort.png)
 
