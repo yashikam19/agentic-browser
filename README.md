@@ -6,7 +6,7 @@
 ![uv](https://img.shields.io/badge/uv-package%20manager-purple)
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
-# BrowserPilot
+# Browserf
 
 A powerful web automation framework that performs complex browser tasks through natural language commands
 
